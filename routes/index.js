@@ -13,14 +13,14 @@ results = {
     'medium': 'Your data is <span class="result-result">not big</span>.<br/>' +
 	'<p class="note">You can probably analyze it on a single computer.</p>',
     'biggish': 'Your data is <span class="result-result">biggish</span>.<br/>' +
-	'<p class="note">You can still rent a machine in ' +
+	'<p class="note">You can still rent a machine in the ' +
 	'cloud that can just load all of it at once.</p>',
     'big': 'Congratulations, your data is <span class="result-result">big</span>.<br/>' +
 	'<p class="note">But there is still a good ' +
 	'chance that you can analyze it on a regular computer. Often you ' +
-	'can simply drop irrelevant variables. Another possibility is ' +
-	'sampling: you might get very good predictive models just with ' +
-	'1% of the data! Explore these possibilities before buying a ' +
+	'can simply drop irrelevant variables. Or try sampling, ' +
+	'you can fit good predictive models with just ' +
+	'1% of the data! Explore these options before buying a ' +
 	'huge computer cluster and hiring a team of 10 to manage it.</p>',
     'huge': 'You are kidding, right?'
 };
