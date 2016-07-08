@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other
+	 head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <link rel="stylesheet" href="/bower_components/pure/pure-min.css">
+    <!--[if lte IE 8]>
+	<link rel="stylesheet"
+              href="/bower_components/pure/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+	<link rel="stylesheet"
+              href="/bower_components/pure/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+    <style>
+      /*
+        When setting the primary font stack, apply it to the Pure grid units along
+        with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+        specific font stacks to ensure the greatest OS/browser compatibility.
+      */
+      html, button, input, select, textarea,
+      .pure-g [class *= "pure-u"] {
+        /* Set your content font stack here: */
+        font-family: 'Exo 2', sans-serif;
+      }
+    </style>
+
+    <style>
+
+      .button-submit,
+      .button-white {
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+      .button-submit {
+            color: white;
+            background: rgb(66, 184, 221);
+      }
+
+      .huge-form {
+            font-size: 300%;
+            text-align: center;
+      }
+
+      .right-input {
+            text-align: right;
+      }
+
+      #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+            color: #555;
+      }
+
+      .result-size {
+            margin-top: 100px;
+            font-size: 300%;
+            text-align: center;
+      }
+
+      .result {
+            margin-top: 40px;
+            font-size: 200%;
+            text-align: center;
+      }
+
+      .result-result {
+            color: red;
+            font-weight: bold;
+      }
+
+      p.note {
+            color: #555;
+      }
+
+    </style>
+
+    <title>{{ title }}</title>
+
+  </head>
+
+  <body>
+    <div id="wrap"><div id="main">
+	<div class="content">{{$ content }}{{/ content }}</content>
+    </div></div>
+
+    <div id="footer">
+      By <a href="https://twitter.com/mangothecat">@MangoTheCat</a>
+      &middot;
+      Inspiration from a
+      <a href="https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Size-of-Datasets-for-Analytics-and-Implications-for-R">
+	useR presentation</a> by <a href="https://twitter.com/DataScienceLA">
+	@DataScienceLA</a>
+    </div>
+  </body>
+
+</html>

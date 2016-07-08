@@ -11,6 +11,7 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "hjs": "~0.0.6",
+    "hogan-express": "^0.5.2",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
   }

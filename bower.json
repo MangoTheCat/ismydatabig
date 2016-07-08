@@ -1,0 +1,21 @@
+{
+  "name": "ismydatabig",
+  "description": "Your data is not big. Most likely.",
+  "main": "",
+  "authors": [
+    "Gábor Csárdi <csardi.gabor@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gaborcsardi/ismydatabig",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.0"
+  }
+}

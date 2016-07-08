@@ -1,0 +1,15 @@
+
+{{< layout }}{{$ content }}
+
+    <div class="pure-g">
+      <div class="pure-u-2-24"></div>
+      <div class="pure-u-20-24">
+
+      <div class="result-size">{{ size }} {{ unit }}</div>
+      <div class="result">{{{ result }}}</div>
+
+      </div>
+      <div class="pure-u-2-24"></div>
+    </div>
+
+{{/ content }}{{/ layout }}
