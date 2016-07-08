@@ -20,83 +20,8 @@
               href="/bower_components/pure/grids-responsive-min.css">
     <!--<![endif]-->
 
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-
-    <style>
-      /*
-        When setting the primary font stack, apply it to the Pure grid units along
-        with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
-        specific font stacks to ensure the greatest OS/browser compatibility.
-      */
-      html, button, input, select, textarea,
-      .pure-g [class *= "pure-u"] {
-        /* Set your content font stack here: */
-        font-family: 'Exo 2', sans-serif;
-      }
-    </style>
-
-    <style>
-
-      .button-submit,
-      .button-white {
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        }
-
-      .button-submit {
-            color: white;
-            background: rgb(66, 184, 221);
-      }
-
-      .huge-form {
-      margin-top: 100px;
-      text-align: center;
-      font-size: 16px; font-size: 2vw;
-      }
-
-      .right-input {
-            text-align: right;
-      }
-
-      html {
-            position: relative;
-            min-height: 100%;
-      }
-      body {
-            margin: 0 0 40px; /* bottom = footer height */
-      }
-      footer {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 30px;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 10px;
-      }
-
-      .result-size {
-            margin-top: 80px;
-            font-size: 300%;
-            text-align: center;
-      }
-
-      .result {
-            margin-top: 40px;
-            font-size: 200%;
-            text-align: center;
-      }
-
-      .result-result {
-            color: red;
-            font-weight: bold;
-      }
-
-      p.note {
-            color: #555;
-            font-size: 75%;
-      }
-
-    </style>
 
     <title>{{ title }}</title>
 

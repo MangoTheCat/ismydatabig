@@ -1,8 +1,129 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/* em pure-hidden values */
+
+/* pure-hidden-xs */
+@media screen and (max-width:35.438em) {
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-xs{display:none}
+    body { font-size: 150%; }
+}
+/* pure-hidden-sm */
+@media screen and (min-width:35.5em) and (max-width:47.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-sm{display:none}
+    body { font-size: 150%; }
+}
+/* pure-hidden-md */
+@media screen and (min-width:48em) and (max-width:63.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-md{display:none}
+    body { font-size: 200%; }
+}
+/* pure-hidden-lg */
+@media screen and (min-width:64em) and (max-width:79.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-lg{display:none}
+    body { font-size: 300%; }
+}
+/* pure-hidden-xl */
+@media screen and (min-width:80em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-hidden-xl{display:none}
+    body { font-size: 300%; }
 }
 
-a {
-  color: #00B7FF;
+/*
+   When setting the primary font stack, apply it to the Pure grid units along
+   with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+   specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Exo 2', sans-serif;
+}
+
+.button-submit,
+.button-white {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-submit {
+    color: white;
+    background: rgb(66, 184, 221);
+}
+
+.huge-form {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.small-form {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.small-form button {
+    margin-top: 10px;
+}
+
+.right-input {
+    text-align: right;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+            margin: 0 0 40px; /* bottom = footer height */
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 50%;
+}
+
+.result-size {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.result {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.result-result {
+    color: red;
+    font-weight: bold;
+}
+
+p.note {
+    color: #555;
+    font-size: 75%;
 }
