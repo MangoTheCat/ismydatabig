@@ -1,11 +1,11 @@
 {{< layout }}{{$ content }}
 
     <div class="pure-g">
-      <div class="pure-u-2-24"></div>
-      <div class="pure-u-20-24">
+      <div class="pure-u-24-24">
 
 	<form class="pure-form huge-form" action="/result">
 	  <h1>Is my data big?</h1>
+	  <span>
 	  <input type="text" class="pure-input right-input"
 		 maxlength="10" pattern="[0-9]*[.]?[0-9]*"
 		 name="size" placeholder="Your data size">
@@ -22,10 +22,10 @@
 	  <button type="submit" class="pure-button button-submit">
 	    Tell me!
 	  </button>
+	  </span>
 	</form>
 
       </div>
-      <div class="pure-u-2-24"></div>
     </div>
 
 {{/ content }}{{/ layout }}

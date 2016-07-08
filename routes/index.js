@@ -15,7 +15,7 @@ results = {
     'biggish': 'Your data is <span class="result-result">biggish</span>.<br/>' +
 	'<p class="note">You can still rent a machine in ' +
 	'cloud that can just load all of it at once.</p>',
-    'big': 'Congratulations, your data is <span="result-result">big</span>.<br/>' +
+    'big': 'Congratulations, your data is <span class="result-result">big</span>.<br/>' +
 	'<p class="note">But there is still a good ' +
 	'chance that you can analyze it on a regular computer. Often you ' +
 	'can simply drop irrelevant variables. Another possibility is ' +

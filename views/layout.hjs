@@ -48,25 +48,34 @@
       }
 
       .huge-form {
-            font-size: 300%;
-            text-align: center;
+      margin-top: 100px;
+      text-align: center;
+      font-size: 16px; font-size: 2vw;
       }
 
       .right-input {
             text-align: right;
       }
 
-      #footer {
-            position: fixed;
+      html {
+            position: relative;
+            min-height: 100%;
+      }
+      body {
+            margin: 0 0 40px; /* bottom = footer height */
+      }
+      footer {
+            position: absolute;
+            left: 0;
             bottom: 0;
+            height: 30px;
             width: 100%;
             text-align: center;
-            padding-bottom: 10px;
-            color: #555;
+            margin-bottom: 10px;
       }
 
       .result-size {
-            margin-top: 100px;
+            margin-top: 80px;
             font-size: 300%;
             text-align: center;
       }
@@ -84,6 +93,7 @@
 
       p.note {
             color: #555;
+            font-size: 75%;
       }
 
     </style>
@@ -93,18 +103,19 @@
   </head>
 
   <body>
-    <div id="wrap"><div id="main">
-	<div class="content">{{$ content }}{{/ content }}</content>
-    </div></div>
+    <div class="wrapper">
+      <div class="content">{{$ content }}{{/ content }}</content>
+      <div class="push"></div>
+    </div>
 
-    <div id="footer">
+    <footer>
       By <a href="https://twitter.com/mangothecat">@MangoTheCat</a>
       &middot;
       Inspiration from a
       <a href="https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Size-of-Datasets-for-Analytics-and-Implications-for-R">
 	useR presentation</a> by <a href="https://twitter.com/DataScienceLA">
 	@DataScienceLA</a>
-    </div>
+    </footer>
   </body>
 
 </html>
