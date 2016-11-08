@@ -22,7 +22,9 @@ results = {
 	'you can fit good predictive models with just ' +
 	'1% of the data! Explore these options before buying a ' +
 	'huge computer cluster and hiring a team of 10 to manage it.</p>',
-    'huge': 'You are kidding, right?'
+    'huge': 'You are kidding, right?',
+    'unknown': 'Can you please just behave yourself and use the form to select the unit? Thanks much!',
+    'nodata': 'So you have no data? That\'s OK, you can still live a happy life.'
 };
 
 router.get("/result", function(req, res, next) {
@@ -49,10 +51,16 @@ function classify_size(size, unit) {
 	size = size * 1000 * 1000 * 1000;
     } else if (unit == 'YB') {
 	size = size * 1000 * 1000 * 1000 * 1000;
+    } else if (unit == 'TB') {
+	// do nothing, in TB
+    } else {
+	return 'unknown';
     }
 
     // Unit is TB now
-    if (size < .1) {
+    if (size == 0) {
+	return 'nodata';
+    } else if (size < .1) {
 	return 'tiny';
     } else if (size < .5) {
 	return 'small';
