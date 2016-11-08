@@ -28,7 +28,7 @@ results = {
 };
 
 router.get("/result", function(req, res, next) {
-    var size = req.query.size;
+    var size = req.query.size || "0";
     var unit = req.query.unit;
     var result = classify_size(size, unit);
     res.render('result', { 'title': 'Tadaaaaam',
